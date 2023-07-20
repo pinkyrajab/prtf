@@ -8,21 +8,16 @@ import {
 import './App.css';
 import React from "react";
 import ParticlesBackground from './Components/ParticlesBackground';
-import TopNav from './Components/TopNav/TopNav';
-import About from './Components/About/About';
-
+import MainComponent from './Components/MainComponent/MainComponent';
 
 function App() {
   return (
     <div className="App">
       <ParticlesBackground/>
       <div>
-        <TopNav/>
-      </div>
-      <div>
         <Router>
           <Routes>
-              <Route path='/' element={<About/>}/>
+              <Route path='/' element={<MainComponent/>}/>
           </Routes>
         </Router>
       </div>

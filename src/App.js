@@ -8,22 +8,28 @@ import {
 import './App.css';
 import React from "react";
 import ParticlesBackground from './Components/ParticlesBackground';
-import MainComponent from './Components/MainComponent/MainComponent';
-
+// components
+import Home from './Components/Home'
+import InitialProjs from './Components/Projects/InitialProjs';
 function App() {
   return (
     <div className="App">
-      <ParticlesBackground/>
-      <div>
-        <Router>
-          <Routes>
-              <Route path='/' element={<MainComponent/>}/>
-          </Routes>
-        </Router>
+    <div>
+      <Router>
+      <ParticlesBackground />
+      <div style={{height:"35px"}}>
       </div>
-      
-      
+      <div className='container' style={{backgroundColor:"white!important"}}>
+      <div class="card">
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+        </Routes> 
+      </div>
+      </div>
+      </Router>
     </div>
+  </div>
+  
   );
 }
 

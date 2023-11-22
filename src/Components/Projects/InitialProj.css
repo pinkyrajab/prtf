@@ -1,0 +1,12 @@
+.project-brand{
+    color: rgb(252, 252, 252)!important;
+    font-family: 'MonteCarlo', cursive!important;
+    font-size:40px!important;
+}
+.cardProj:hover {
+    transform: scale(1.1);
+  }
+  .cardProj {
+    transition: transform 0.5s;
+  }
+  

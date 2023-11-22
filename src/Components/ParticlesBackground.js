@@ -25,10 +25,11 @@ const ParticlesBackground =()=> {
             style={{
                 width: "100%",
                 height: "100%",
-                position: "absolute",
+                position: "absolute", // Change to "absolute" or "static" if needed
                 top: "0",
                 left: "0",
-                backgroundColor: "black"
+                backgroundColor: "#FE7254",
+                zIndex: 0, // Add a zIndex to particles component
             }}
             params={particlesConfig}
         />

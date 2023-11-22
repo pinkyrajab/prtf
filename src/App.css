@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left!important;
 }
 
 .App-logo {
@@ -35,4 +35,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card{
+  /* background-color: rgb(245, 212, 212)!important; */
+  background-color: rgb(220, 215, 215)!important;
 }

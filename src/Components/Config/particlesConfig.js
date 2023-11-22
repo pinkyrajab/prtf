@@ -8,7 +8,7 @@ const particlesConfig = {
       position: "50% 50%",
       repeat: "no-repeat",
       size: "cover",
-      opacity: 1
+      opacity: 0.5
     },
     backgroundMask: {
       composite: "destination-out",
@@ -24,7 +24,7 @@ const particlesConfig = {
     delay: 0,
     fullScreen: {
       enable: true,
-      zIndex: 1
+      zIndex: 0
     },
     detectRetina: true,
     duration: 0,
@@ -502,7 +502,7 @@ const particlesConfig = {
           value: "#ffffff"
         },
         consent: false,
-        distance: 150,
+        distance: 100,
         enable: true,
         frequency: 1,
         opacity: 0.4,

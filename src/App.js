@@ -20,11 +20,9 @@ function App() {
       <div style={{height:"35px"}}>
       </div>
       <div className='container' style={{backgroundColor:"white!important"}}>
-      <div class="card">
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-        </Routes> 
-      </div>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+          </Routes> 
       </div>
       </Router>
     </div>

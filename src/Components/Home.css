@@ -1,6 +1,5 @@
 .body{
     background-color: black;
-    color: white!important;
 }
 .profile{
     /* background-image: url(/src/assets/images/Hemmingways1.jpeg);
@@ -13,10 +12,90 @@
     font-size: 30px;
 }
 .maincardProj{
-    background-color: whitesmoke;
-    background-image: url(/src/assets/images/programcode.jpg);
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/src/assets/images/programcode.jpg) no-repeat ;
+    background-color: #935f5f!important;
+    /* background-image: url(/src/assets/images/programcode.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/src/assets/images/programcode.jpg) no-repeat ; */
     /* background-size: cover; */
-    height: 100vh;
-    width:100%;
+    /* height: 100vh; */
+    /* width:100%; */
+}
+.topdiv{
+    box-shadow: rgba(221, 93, 93, 0.507) 0px 1px 1px 0px inset,  rgba(146, 61, 61, 0.507)  0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px!important;
+}
+.bottomdiv{
+    box-shadow: rgba(221, 93, 93, 0.507) 0px 1px 1px 0px inset,  rgba(146, 61, 61, 0.507)  0px 50px 100px -20px, rgba( 0.3, 0, 0,0) -30px 30px 60px 0px!important;
+}
+li{
+    list-style: none;
+    margin: 19px;
+}
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid grey;
+  outline: 0;
+  /* font-size: 1rem; */
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    /* font-size: 1.3rem; */
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: gray;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}
+li a{
+    text-decoration: none!important;
+    color: black!important;
+}
+li a:hover{
+    color: rgb(160, 50, 11) !important;
+    font-weight: 600!important;
+}
+.btnSubmit{
+    width: 50%!important;
+    background-color: rgb(129, 57, 57)!important;
 }
